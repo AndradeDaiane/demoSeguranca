@@ -50,7 +50,7 @@ public class SecurityConfig {
                 .permitAll()
                 )
                 // Habilita autenticação HTTP Basic (usuário e senha via cabeçalho HTTP).
-                .httpBasic(_ -> {
+                .httpBasic(httpBasic -> {
                 }); // Forma recomendada para habilitar HTTP Basic
 
         // Permite o uso de frames para o H2 Console
